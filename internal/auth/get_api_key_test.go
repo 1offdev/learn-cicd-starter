@@ -17,7 +17,7 @@ func TestGetAPIKey(t *testing.T) {
 			headers: http.Header{
 				"Authorization": []string{"ApiKey abc123"},
 			},
-			want: "abc1234",
+			want: "abc123",
 		},
 		{
 			name:    "returns error when authorization header is missing",
